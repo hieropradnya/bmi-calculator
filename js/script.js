@@ -40,10 +40,16 @@ tombolHitungBMI.addEventListener("click", function (event) {
     }
 
     // Mengubah teks di dalam elemen dengan id "bmiResult" menjadi hasil BMI yang dihitung
-    document.getElementById("bmiKategori").innerText = kategori;
-    document.getElementById("bmiSkor").innerText = bmi;
-    document.getElementById("bmiAnda").innerText = "Anda memiliki berat yang " + kategori.split(" ")[0];
-    document.getElementById("bmiAntara").innerText = "Hasil BMI " + antara;
-    document.getElementById("bmiPenjelasan").innerText = penjelasan;
+    document.getElementById("bmi-kategori").innerText = kategori;
+    document.getElementById("bmi-skor").innerText = bmi;
+    document.getElementById("bmi-anda").innerText = "Anda memiliki berat yang " + kategori.split(" ")[0];
+    document.getElementById("bmi-antara").innerText = "Hasil BMI " + antara;
+    document.getElementById("bmi-penjelasan").innerText = penjelasan;
+
+    // Menampilkan hasil penjelasan
+    document.querySelector(".penjelasan2").style.display = "block";
+
+    //Memposisikan tampilan ke hasil
+    document.getElementById("container-right").scrollIntoView({ behavior: "smooth" });
   }
 });

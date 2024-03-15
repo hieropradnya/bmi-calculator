@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator BMI</title>
+    <title>Kalkulator BMI - hieropradnya</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="asset/logoTimbanganKecil.png" />
+    <title>Kalkulator indeks massa tubuh (IMT)</title>
+    <meta name="description" content="Kalkulator IMT, kalkulator BMI">
+    <meta name="description" content="Gunakan kalkulator indeks massa tubuh (IMT) kami untuk menentukan apakah berat badan Anda ideal. Temukan tips untuk kesehatan dan kebugaran dari hieropradnya.">
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="#"><span>hier.</span></a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <a href=""><span>hier.</span></a>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
     <main class="container">
@@ -34,9 +37,9 @@
           <form action="">
             <h4>Jenis Kelamin</h4>
             <input type="radio" name="gender" id="pria" />
-            <label for="pria">Pria</label>
+            <label class="gender" for="pria">Pria</label>
             <input type="radio" name="gender" id="wanita" />
-            <label for="wanita">Wanita</label>
+            <label class="gender" for="wanita">Wanita</label>
             <br />
             <h4>Berat Badan (kg)</h4>
             <input type="number" name="berat" id="berat" />
@@ -72,34 +75,32 @@
           </p>
         </article>
       </section>
-      <section class="container-right">
+      <section class="container-right" id="container-right">
         <header>
             <h2>Hasil</h2>
-          </header>
-          <article class="hasil">
-            <h3 id="bmiKategori">Masukkan Data!</h3>
-            <span id="bmiSkor" class="skor">
+        </header>
+        <article class="hasil">
+            <h3 id="bmi-kategori">Masukkan Data!</h3>
+            <span id="bmi-skor" class="skor">
                 -
             </span>
-            <h4 id="bmiAnda">Anda belum menginputkan data.</h4>
-            <button>Download Hasil BMI</button>
-          </article>
+            <h4 id="bmi-anda">Anda belum menginputkan data.</h4>
+        </article>
           <br>
-          <article class="penjelasan">
-            <h5 id="bmiAntara">Masukkan data terlebih dahulu.</h5>
-            <br>
-            <h5 id="bmiPenjelasan"></h5>
-            <br>
-            <h5>
-                BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
-                seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
-                berat badan Anda.
-            </h5>            
-          </article>
-          <br>
-          <article class="penyakit">
+        <article class="penjelasan2">
+            <h5 id="bmi-antara"></h5>
+            <h5 id="bmi-penjelasan"></h5>          
+        </article>
+        <br>
+        <h5>
+          BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
+          seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+          berat badan Anda.
+        </h5>  
+        <br>
+        <article class="penyakit">
             <h3>
-                <p>Beberapa penyakit yang berasal dari kegemukan</p>
+                <p>Penyakit yang bisa timbul dari kelebihan berat badan</p>
             </h3>
             <h5>
                 <p>Diabetes</p>
@@ -109,12 +110,12 @@
             </h5>
             <button>Konsultasi Ahli Gizi Via Aplikasi</button>
             <button>Registrasi Online Ahli Gizi</button>
-          </article>
+        </article>
       </section>
     </main>
     <footer>
             Created by <span class="username">
-                <a href="https://www.instagram.com/hieropn">@hieropn</a>
+                <a href="https://www.instagram.com/hieropn">@hieropradnya</a>
             </span>
     </footer>
 
